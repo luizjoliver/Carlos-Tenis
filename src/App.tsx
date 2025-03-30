@@ -1,11 +1,11 @@
-import './App.css'
+import Introduction from './components/Introduction/Introduction'
 
 function App() {
 
 
   return (
     <>
-     <h1>Why you chose your product </h1>
+    <Introduction/>
     </>
   )
 }
