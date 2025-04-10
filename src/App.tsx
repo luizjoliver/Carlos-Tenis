@@ -1,11 +1,15 @@
-import Introduction from './components/Introduction/Introduction'
+import AboutSection from "./components/About/About"
+import StartSection from "./components/Introduction/StartSection"
+
+
 
 function App() {
 
 
   return (
     <>
-    <Introduction/>
+    <StartSection/>
+    <AboutSection/>
     </>
   )
 }

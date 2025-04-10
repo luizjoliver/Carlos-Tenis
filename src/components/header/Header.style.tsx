@@ -38,9 +38,13 @@ export const DivLogo = styled.div`
     height: 2rem;
     width: 2rem;
    }
+
+   @media(max-width: 1440px){
+    width: 33%;
+   }
 `
 
-export const NavBar = styled.header`
+export const NavBar = styled.nav`
     display: flex;
     width: 33%;
     height: 100%;
@@ -59,7 +63,20 @@ export const NavBar = styled.header`
         border-radius: 5rem;
         color: ${(props) => props.theme.colors.white};
             }
+
+
+            @media(max-width: 1440px){
+                width: 66.66666666666667%;
+                
+            }
+
+            @media(max-width: 768px){
+                display: none;
+                
+            }
+        
 `
+   
 
 export const DivWhatsapp = styled.header`
     display: flex;
@@ -69,10 +86,16 @@ export const DivWhatsapp = styled.header`
     align-items: center;
     justify-content: end;
     padding-right: 2rem;
+
     button{
         background-color: ${(props) => props.theme.colors.secondary};
         padding: 1rem 2rem;
         border-radius: 5rem;
          
+    }
+
+    @media(max-width: 1440px){
+        display: none;
+      
     }
 `

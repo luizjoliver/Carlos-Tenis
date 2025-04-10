@@ -1,8 +1,10 @@
-import { Link } from "react-router";
-import { DivLogo, DivWhatsapp, NavBar, StyledHeader } from "./Header.style";
-import tennisBall from "../../assets/tennisBall.png"
+import { DivLogo, DivWhatsapp, StyledHeader } from "./Header.style";
+import tennisBall from "../../assets/tennisBall.png";
+import { ReactNode } from "react";
+import Button from "../Button/Button";
+import NavBarComponent from "./NavBar";
 
-export default function Header() {
+export default function Header({children}:{children:ReactNode}) {
   return (
     <StyledHeader >
 
@@ -13,18 +15,16 @@ export default function Header() {
         </div>
       </DivLogo>
 
-      <NavBar>
-        <ul>
-          <Link to={"/"}>Sobre</Link >
-          <Link to={"/"}>Experiência</Link >
-          <Link to={"/"}>Planos</Link >
-        </ul>
-      </NavBar>
-
+      <NavBarComponent>
+        {children}
+      </NavBarComponent>
+        
       <DivWhatsapp>
-        <button>
+    
+        <Button variant="secondary">
           Entre em contato
-        </button>
+        </Button>
+
       </DivWhatsapp>
 
     </StyledHeader>
