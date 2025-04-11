@@ -7,12 +7,21 @@ export const AboutSectionStyled = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1440px) {
+    height: auto;
+    padding: 4rem 0;
+  }
 `;
 
 export const Container = styled.div`
   height: 80%;
   width: 100%;
   padding: 0 2rem;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 `;
 
 export const AboutText = styled.div`
@@ -36,7 +45,6 @@ export const AboutText = styled.div`
   .arrowLeft, .arrowRight {
     border-radius: 100%;
     cursor: pointer;
-    background-color: transparent;
     opacity: 50%;
     
     &:hover {
@@ -47,13 +55,17 @@ export const AboutText = styled.div`
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    
     h1 {
-      font-size: 1rem;
+      font-size: 1.75rem;
     }
   }
 `;
@@ -63,21 +75,40 @@ export const AboutContainerContent = styled.div`
   height: 85%;
   display: flex;
   flex-direction: column;
+  gap: 3rem;
+
+  @media (max-width: 1440px) {
+    height: auto;
+  }
 `;
 
 export const AboutContent = styled.div`
   width: 100%;
   height: 90%;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+
+  @media (max-width: 1440px) {
+    flex-direction: column;
+    height: auto;
+  }
 
   .imagesWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 40%;
+    width: 50%;
     height: 100%;
+
+    @media (max-width: 1440px) {
+      width: 100%;
+      height: 400px;
+    }
+
+    @media (max-width: 768px) {
+      height: 300px;
+    }
 
     .imgBottom, .imgTop {
       width: 280px;
@@ -85,56 +116,92 @@ export const AboutContent = styled.div`
       border-radius: 1rem;
       position: absolute;
       object-fit: cover;
+
+      @media (max-width: 768px) {
+        width: 220px;
+        height: 200px;
+      }
     }
     
     .imgTop {
       transform: rotate(10deg);
-    
+      
+      @media (max-width: 1440px) {
+        display: none;
+      }
     }
     
     .imgBottom {
       transform: translate(-50%, 50%);
       
+      @media (max-width: 1440px) {
+        transform: none;
+        position: relative;
+      }
     }
   }
 `;
 
 export const AboutInfoContainer = styled.div`
   flex: 1;
-  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: start;
- 
-  /* background-color: pink; */
+  justify-content: flex-start;
+  width: 100%;
+
+  @media (max-width: 1440px) {
+    justify-content: center;
+    padding: 2rem 0;
+  }
 `;
 
 export const Info = styled.div`
   height: 80%;
   width: 60%;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   
-  h2{
-    font-size:2rem;
+  h2 {
+    font-size: 2rem;
   }
-  div{
-    width: 250px;
-  
+
+  p {
+    line-height: 1.6;
+  }
+
+  div {
+
     button {
       display: flex;
       gap: 1rem;
       align-items: center;
     }
   }
+
+  @media (max-width: 1440px) {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 1rem;
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 0.9rem;
+    }
+  }
 `;
 
 export const AboutNavigation = styled.div`
   width: 100%;
-  height: 10%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -163,6 +230,11 @@ export const AboutNavigation = styled.div`
 
     &:hover {
       color: ${(props) => props.theme.colors.primary};
+    }
+
+    /* Corrigido aqui */
+    &.activedTitle {
+      color: ${(props) => props.theme.colors.primaryFallBack};
       
       &::before {
         width: 100%;

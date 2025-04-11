@@ -25,7 +25,7 @@ export const NavBarMobile = styled.nav`
         right: 0;
         width: 70%; 
         height: 100vh;
-        background-color: ${(props) => props.theme.colors.third};
+        background-color: ${(props) => props.theme.colors.primaryFallBack};
         z-index: 999;
         padding: 20px;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); 
