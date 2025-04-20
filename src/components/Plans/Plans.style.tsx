@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { AboutContainerContent, AboutSectionStyled, AboutText, Container } from "../About/About.style";
+import { ServiceContainerContent, ServiceSectionStyled, ServiceText, Container } from "../Service/Service.style";
 
 interface PlanProps {
     isActive?: boolean;
   }
 
-export const PlanSectionStyled = styled(AboutSectionStyled)`
+export const PlanSectionStyled = styled(ServiceSectionStyled)`
 
 `;
 
@@ -13,11 +13,11 @@ export const ContainerPlan = styled(Container)`
   
 `;
 
-export const AboutPlan = styled(AboutText)`
+export const AboutPlan = styled(ServiceText)`
  
 `;
 
-export const PlansContainerContent = styled(AboutContainerContent)`
+export const PlansContainerContent = styled(ServiceContainerContent)`
   flex-direction: row;
   gap: 2rem;
 `;

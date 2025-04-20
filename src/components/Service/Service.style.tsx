@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutSectionStyled = styled.section`
+export const ServiceSectionStyled = styled.section`
   height: 100vh;
   width: 100%;
   background-color: ${(props) => props.theme.colors.secondary};
@@ -24,7 +24,7 @@ export const Container = styled.div`
   }
 `;
 
-export const AboutText = styled.div`
+export const ServiceText = styled.div`
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -70,7 +70,7 @@ export const AboutText = styled.div`
   }
 `;
 
-export const AboutContainerContent = styled.div`
+export const ServiceContainerContent = styled.div`
   width: 100%;
   height: 85%;
   display: flex;
@@ -82,7 +82,7 @@ export const AboutContainerContent = styled.div`
   }
 `;
 
-export const AboutContent = styled.div`
+export const ServiceContent = styled.div`
   width: 100%;
   height: 90%;
   display: flex;
@@ -142,7 +142,7 @@ export const AboutContent = styled.div`
   }
 `;
 
-export const AboutInfoContainer = styled.div`
+export const ServiceInfoContainer = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
@@ -200,7 +200,7 @@ export const Info = styled.div`
   }
 `;
 
-export const AboutNavigation = styled.div`
+export const ServiceNavigation = styled.div`
   width: 100%;
   display: flex;
   align-items: center;

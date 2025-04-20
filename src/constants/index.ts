@@ -37,7 +37,7 @@ export const customersImg = [
     }
 ]
 
-export const AboutInfos = [
+export const ServiceInfos = [
     {
         id:1,
         firstImg:aboutFirst,

@@ -12,9 +12,9 @@ export default function StartSection() {
     <SectionIntroduction>
       
       <Header>
+        <Link to={"/"}>Serviços</Link >
         <Link to={"/"}>Sobre</Link >
         <Link to={"/"}>Planos</Link >
-        <Link to={"/"}>Depoimentos</Link >
         <Link to={"/"}>Localização</Link >
       </Header>
 
