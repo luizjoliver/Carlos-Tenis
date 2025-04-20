@@ -16,6 +16,8 @@ import thirdaboutSecond from "../assets/thirdAbout2.jpg"
 import fourthaboutFirst from "../assets/fourthAbout1.jpg"
 import fourthaboutSecond from "../assets/fourthAbout2.jpg"
 
+import beginner from "../assets/plans/beginner.jpg"
+
 export const customersImg = [
     {
         id:1,
@@ -69,3 +71,34 @@ export const AboutInfos = [
         buttonText:'Praticar'
     }
 ]
+
+export const Plans = [
+    {
+        id: 1,
+        imgSrc: beginner,
+        title: "Iniciante",
+        description: "Aulas básicas para iniciar no tênis: fundamentos, regras e prática orientada",
+        frequency: 2
+    },
+    {
+        id: 2,
+        imgSrc: beginner,
+        title: "Intermediário",
+        description: "Plano para evolução técnica com aulas semanais e preparação física",
+        frequency: 3
+    },
+    {
+        id: 3,
+        imgSrc: beginner,
+        title: "Avançado",
+        description: "Treinos intensivos com foco em técnicas avançadas e estratégias de jogo",
+        frequency: 4
+    },
+    {
+        id: 4,
+        imgSrc: beginner,
+        title: "Profissional",
+        description: "Programa completo para competição, incluindo análise de desempenho e treino tático",
+        frequency: 5
+    }
+];

@@ -10,10 +10,11 @@ import { BsArrowRightCircleFill } from "react-icons/bs";
 export default function StartSection() {
   return (
     <SectionIntroduction>
+      
       <Header>
         <Link to={"/"}>Sobre</Link >
-        <Link to={"/"}>Experiência</Link >
         <Link to={"/"}>Planos</Link >
+        <Link to={"/"}>Depoimentos</Link >
         <Link to={"/"}>Localização</Link >
       </Header>
 

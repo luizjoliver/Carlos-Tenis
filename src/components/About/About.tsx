@@ -1,10 +1,10 @@
 
 import { AboutContainerContent, AboutContent, AboutInfoContainer, AboutNavigation, AboutSectionStyled, AboutText, Container, Info } from "./About.style";
-import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
 import Button from "../Button/Button";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { useState } from "react";
 import { AboutInfos } from "../../constants";
+import HeadingArrow from "../HeadingArrow/HeandingArrow";
 
 type AboutInfoType = {
 
@@ -45,12 +45,9 @@ export default function AboutSection() {
     <AboutSectionStyled>
       <Container>
         <AboutText>
-          <h1>Sobre Meu Serviço</h1>
 
-          <div>
-            <FiArrowLeft size={25} className="arrowLeft" onClick={() =>handleClickArrow('left')}/>
-            <FiArrowRight size={25} className="arrowRight" onClick={() =>handleClickArrow('right')}/>
-          </div>
+          <HeadingArrow handleClickArrow={handleClickArrow} title="Sobre meu serviço"/>
+
         </AboutText>
 
         <AboutContainerContent>
