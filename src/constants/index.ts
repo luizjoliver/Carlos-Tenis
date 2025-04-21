@@ -100,7 +100,7 @@ export const Plans = [
         id: 4,
         imgSrc: athlete, 
         title: "Atleta",
-        description: "Treinamento profissional para competições ",
+        description: "Treinamento completo com foco em alto rendimento, desempenho físico e torneios",
         frequency: 5
     }
 ];

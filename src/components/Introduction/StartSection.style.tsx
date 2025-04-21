@@ -1,4 +1,3 @@
-// StartSection.style.ts
 import styled from "styled-components";
 import bgTennis from '../../assets/bgTennis.jpg';
 

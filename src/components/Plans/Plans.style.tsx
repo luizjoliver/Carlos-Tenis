@@ -1,4 +1,3 @@
-// Plans.style.ts
 import styled from "styled-components";
 import { 
   ServiceContainerContent, 
@@ -36,6 +35,7 @@ export const ContainerPlan = styled(Container)`
 
 export const AboutPlan = styled(ServiceText)`
   margin-bottom: 3rem;
+
 `;
 
 export const PlansContainerContent = styled(ServiceContainerContent)`
@@ -52,8 +52,6 @@ export const PlansContainerContent = styled(ServiceContainerContent)`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
   }
 `;
 
@@ -66,7 +64,7 @@ export const Plan = styled.div<PlanProps>`
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  min-height: 570px; // Altura principal aumentada
+  min-height: 520px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   box-shadow: ${props => props.isActive 
@@ -80,18 +78,15 @@ export const Plan = styled.div<PlanProps>`
   }
 
   @media (max-width: 1440px) {
-    min-height: 500px;
+    min-height: 320px;
   }
 
   @media (max-width: 1024px) {
-    min-height: 450px;
+    min-height: 200px;
   }
 
   @media (max-width: 768px) {
-    min-height: auto;
-    height: auto;
-    max-width: 100%;
-    margin: 0 auto;
+    min-height: 100px;
   }
 `;
 
@@ -102,16 +97,6 @@ export const PlanDescription = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
-  @media (max-width: 1024px) {
-    padding: 1.5rem;
-    gap: 0.8rem;
-  }
-
-  @media (max-width: 768px) {
-    padding: 1.25rem;
-    gap: 0.6rem;
-  }
 `;
 
 export const ImageContainer = styled.div`
@@ -119,15 +104,10 @@ export const ImageContainer = styled.div`
   position: relative;
   overflow: hidden;
   flex: 1;
-  min-height: 340px; // Aumentado para compensar a altura total
-
-  @media (max-width: 1024px) {
-    min-height: 280px;
-  }
+  min-height: 300px;
 
   @media (max-width: 768px) {
-    min-height: 220px;
-    max-height: 280px;
+    min-height: 250px;
   }
 `;
 
@@ -158,7 +138,7 @@ export const PlanTitle = styled.div`
 
   h1 {
     margin: 0;
-    font-size: 1.6rem; // Aumentado
+    font-size: 1.5rem;
     line-height: 1.3;
     color: ${props => props.theme.colors.text};
     max-width: 80%;
@@ -167,106 +147,89 @@ export const PlanTitle = styled.div`
   }
 
   @media (max-width: 1440px) {
-    h1 {
-      font-size: 1.4rem;
-      padding-right: 90px;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    h1 {
+      h1 {
       font-size: 1.3rem;
       padding-right: 80px;
     }
-  }
+    }
 
-  @media (max-width: 768px) {
-    margin-bottom: 0.75rem;
-    
+  @media (max-width: 1024px) {
     h1 {
-      font-size: 1.2rem;
-      padding-right: 70px;
-      line-height: 1.25;
+      font-size: 1.5rem;
+      padding-right: 90px;
+    }
+
+    div {
+      padding: 0.4rem 0.8rem;
+      
+      span {
+        font-size: 0.85rem;
+      }
+      
+      img {
+        height: 22px;
+        width: 22px;
+      }
     }
   }
 
   @media (max-width: 480px) {
     h1 {
-      font-size: 1.1rem;
-      padding-right: 60px;
+
+      padding-right: 80px;
     }
-  }
+
+    div {
+      padding: 0.3rem 0.6rem;
+      
+      span {
+        font-size: 0.8rem;
+      }
+      
+      img {
+        height: 20px;
+        width: 20px;
+      }
+    }
+}
 `;
 
 export const Frequency = styled.div`
-  position: absolute;
-  top: 12px;
-  right: 8px;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: ${props => props.theme.colors.forth};
-  padding: 0.6rem 1.2rem; // Aumentado
-  border-radius: 20px;
-  transform: translateY(-10%);
-  z-index: 1;
-
-  span {
-    color: ${props => props.theme.colors.white};
-    font-weight: 600;
-    font-size: 1rem; // Aumentado
-    white-space: nowrap;
-  }
-
-  img {
-    height: 26px; // Aumentado
-    width: 26px;
-    object-fit: contain;
-  }
-
-  @media (max-width: 1024px) {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: ${props => props.theme.colors.forth};
     padding: 0.5rem 1rem;
-    
+    border-radius: 20px;
+    transform: translateY(-10%);
+
     span {
+      color: ${props => props.theme.colors.white};
+      font-weight: 600;
       font-size: 0.9rem;
+      white-space: nowrap;
     }
-    
+
     img {
       height: 24px;
       width: 24px;
+      object-fit: contain;
     }
+
+    @media (max-width: 1440px) {
+      padding: 0.2rem 0.3rem;
+
+    span{
+      font-size: 0.7rem;
+    }
+
+   
   }
 
-  @media (max-width: 768px) {
-    top: 10px;
-    right: 6px;
-    padding: 0.4rem 0.8rem;
-    
-    span {
-      font-size: 0.8rem;
-    }
-    
-    img {
-      height: 20px;
-      width: 20px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    top: 8px;
-    right: 4px;
-    padding: 0.3rem 0.6rem;
-    
-    span {
-      font-size: 0.75rem;
-    }
-    
-    img {
-      height: 18px;
-      width: 18px;
-    }
-  }
-`;
+`
 
 export const PlanDetails = styled.div`
   display: flex;
@@ -279,9 +242,9 @@ export const PlanDetails = styled.div`
     margin: 0;
     line-height: 1.6;
     font-weight: 500;
-    font-size: 1rem; // Aumentado
+    font-size: 1.2rem;
     display: -webkit-box;
-    -webkit-line-clamp: 4; // Mais linhas
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     flex-grow: 1;
@@ -291,61 +254,36 @@ export const PlanDetails = styled.div`
     margin-top: auto;
     align-self: flex-start;
     font-weight: 600;
-    width: 150px; // Aumentado
-    padding: 0.9rem; // Aumentado
+    width: 140px;
   }
-
+  
   @media (max-width: 1440px) {
     p {
-      font-size: 0.95rem;
+      font-size: 0.8rem;
     }
-    
     button {
-      font-size: 0.95rem;
+      font-size: 0.8rem;
+      width: 120px;
     }
   }
 
   @media (max-width: 1024px) {
-    gap: 1.2rem;
-    
     p {
-      font-size: 0.9rem;
-      -webkit-line-clamp: 3;
+      font-size: 1rem;
     }
 
     button {
-      width: 140px;
-      padding: 0.8rem;
-    }
-  }
-
-  @media (max-width: 768px) {
-    gap: 1rem;
-    
-    p {
-      font-size: 0.85rem;
-      line-height: 1.5;
-      -webkit-line-clamp: 2;
-    }
-
-    button {
-      width: 100%;
-      max-width: 180px;
-      padding: 0.7rem;
-      font-size: 0.9rem;
+      width: 130px; 
     }
   }
 
   @media (max-width: 480px) {
-    gap: 0.8rem;
-    
     p {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
     }
 
     button {
-      max-width: 160px;
-      padding: 0.6rem;
+      width: 120px;
     }
   }
-`;
+`
