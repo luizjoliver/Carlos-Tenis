@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-   /* Reset básico */
+
    * {
       box-sizing: border-box;
       margin: 0;
@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
       list-style: none;
    }
 
-   /* Ajustes para melhor usabilidade */
+
    html, body {
       width: 100%;
       height: 100%;
@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
       -moz-osx-font-smoothing: grayscale;
    }
 
-   /* Reset de botões */
+  
    button {
       all: unset;
       cursor: pointer;
@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
       justify-content: center;
    }
 
-   /* Reset de links */
+ 
    a {
       all: unset;
       cursor: pointer;

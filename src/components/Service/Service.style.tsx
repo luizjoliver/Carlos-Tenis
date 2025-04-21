@@ -60,9 +60,6 @@ export const ServiceText = styled.div`
   }
 
   @media (max-width: 480px) {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
     
     h1 {
       font-size: 1.75rem;

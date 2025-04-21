@@ -17,6 +17,9 @@ import fourthaboutFirst from "../assets/fourthAbout1.jpg"
 import fourthaboutSecond from "../assets/fourthAbout2.jpg"
 
 import beginner from "../assets/plans/beginner.jpg"
+import intermediate from "../assets/plans/intermediate.jpg"
+import advanced from "../assets/plans/advanced.jpg"
+import athlete from "../assets/plans/professional.jpg"
 
 export const customersImg = [
     {
@@ -82,23 +85,22 @@ export const Plans = [
     },
     {
         id: 2,
-        imgSrc: beginner,
-        title: "Intermediário",
+        imgSrc: intermediate,
+        title: "Regular",
         description: "Plano para evolução técnica com aulas semanais e preparação física",
         frequency: 3
     },
     {
         id: 3,
-        imgSrc: beginner,
-        title: "Avançado",
+        imgSrc: advanced,
+        title: "Experiente",
         description: "Treinos intensivos com foco em técnicas avançadas e estratégias de jogo",
         frequency: 4
-    },
-    {
+    },   {
         id: 4,
-        imgSrc: beginner,
-        title: "Profissional",
-        description: "Programa completo para competição, incluindo análise de desempenho e treino tático",
+        imgSrc: athlete, 
+        title: "Atleta",
+        description: "Treinamento profissional para competições ",
         frequency: 5
     }
 ];

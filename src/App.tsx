@@ -9,12 +9,12 @@ function App() {
 
 
   return (
-    <>
+    <main>
     <StartSection/>
     <ServiceSection/>
     <AboutSection/>
     <PlansSection/>
-    </>
+    </main>
   )
 }
 

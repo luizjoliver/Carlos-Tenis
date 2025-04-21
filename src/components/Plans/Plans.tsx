@@ -1,8 +1,9 @@
-import { AboutPlan, ContainerPlan, ImageContainer, ImagePlan, Plan, PlanDescription, PlansContainerContent, PlanSectionStyled } from './Plans.style';
+import { AboutPlan, ContainerPlan, ImagePlan, Plan, PlanDescription, PlanDetails, PlansContainerContent, PlanSectionStyled, PlanTitle, ImageContainer, Frequency } from './Plans.style';
 import tennisBall from "../../assets/tennisBall.png";
-import HeadingArrow from '../HeadingArrow/HeandingArrow';
 import { Plans } from '../../constants';
 import { useState } from 'react';
+import HeadingArrow from '../HeadingArrow/HeandingArrow';
+import Button from '../Button/Button';
 
 export default function PlansSection() {
   const [currentPlan, setCurrentPlan] = useState(1);
@@ -10,12 +11,9 @@ export default function PlansSection() {
   function handleClickArrow(direction: "left" | "right") {
     setCurrentPlan(prev => {
       const totalPlans = Plans.length;
-      
-      if(direction === 'left') {
-        return prev === 1 ? totalPlans : prev - 1;
-      }
-      
-      return prev === totalPlans ? 1 : prev + 1;
+      return direction === 'left' 
+        ? (prev === 1 ? totalPlans : prev - 1)
+        : (prev === totalPlans ? 1 : prev + 1);
     });
   }
 
@@ -28,21 +26,30 @@ export default function PlansSection() {
 
         <PlansContainerContent>
           {Plans.map((plan) => (
-            <Plan 
+            <Plan
               key={plan.id}
               isActive={plan.id === currentPlan}
+              onClick={() => setCurrentPlan(plan.id)}
             >
-              <img src={tennisBall} alt="Ícone de bola de tênis" />
+              <Frequency>
+                    <span>{plan.frequency}x/Semana</span>
+                    <img src={tennisBall} alt="Ícone de bola de tênis" />
+                  </Frequency>
               <PlanDescription>
-                <h2>{plan.title}</h2>
-                <p>{plan.description}</p>
-                <div className="frequency">
-                  {plan.frequency}x/semana
-                </div>
+                <PlanTitle>
+                  <h1>{plan.title}</h1>
+                </PlanTitle>
+
+                <PlanDetails> 
+                  <p>{plan.description}</p>
+                  <Button variant={currentPlan === plan.id ? 'secondary' : 'primary'}>
+                    Comprar Agora
+                  </Button>
+                </PlanDetails>
               </PlanDescription>
 
               <ImageContainer>
-                <ImagePlan src={plan.imgSrc} alt={`Plano ${plan.title}`} />
+                <ImagePlan src={plan.imgSrc} alt={plan.title} />
               </ImageContainer>
             </Plan>
           ))}

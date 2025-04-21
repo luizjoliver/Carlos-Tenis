@@ -1,4 +1,3 @@
-// CarlosSection.style.ts
 import styled from "styled-components";
 
 export const CarlosSectionStyled = styled.section`
