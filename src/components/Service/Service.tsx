@@ -42,21 +42,22 @@ export default function ServiceSection() {
 
   return (
 
-    <ServiceSectionStyled>
+    <ServiceSectionStyled id="servicos">
       <Container>
         <ServiceText>
 
-          <HeadingArrow handleClickArrow={handleClickArrow} title="Sobre meu serviço"/>
+          <HeadingArrow handleClickArrow={handleClickArrow} title="Sobre meu serviço"
+           aria-label="Navegação entre serviços"/>
 
         </ServiceText>
 
         <ServiceContainerContent>
 
           <ServiceContent>
-            <div className="imagesWrapper">
-              <img src={serviceInfo.secondImg} alt="imagem 1" className="imgBottom" />
-              <img src={serviceInfo.firstImg} alt="imagem 2" className="imgTop" />
-            </div>
+          <figure className="imagesWrapper" aria-label="Demonstração visual do serviço">
+              <img src={serviceInfo.secondImg}  alt={`Ilustração Principal do serviço ${serviceInfo.title}`} className="imgBottom" />
+              <img src={serviceInfo.firstImg}  alt={`Ilustração secundária do serviço ${serviceInfo.title}`} className="imgTop" />
+          </figure>
 
             <ServiceInfoContainer>
 
@@ -65,7 +66,7 @@ export default function ServiceSection() {
                 <p>{serviceInfo.description}</p>
 
                 <div>
-                  <Button variant="primary">
+                  <Button variant="primary" aria-label={`Acessar ${serviceInfo.buttonText}`}>
                     {serviceInfo.buttonText}
                     <BsArrowRightCircleFill size={20} />
                   </Button>
@@ -76,12 +77,17 @@ export default function ServiceSection() {
             </ServiceInfoContainer>
           </ServiceContent>
 
-          <ServiceNavigation role="navigation">
+          <ServiceNavigation role="navigation" 
+            aria-label="Seleção de serviços">
 
             {ServiceInfos.map((info) => (
               <button onClick={() =>handleClickTitle(info.id)} className={`
            ${serviceInfo.title === info.title ? 'activedTitle' :''}     
-                `}>{info.title}</button>
+                `}
+                role="tab"
+                aria-selected={serviceInfo.title === info.title}
+                aria-controls={`service-${info.id}`}
+                >{info.title}</button>
             ))}
 
           </ServiceNavigation>

@@ -103,4 +103,39 @@ export const Plans = [
         description: "Treinamento completo com foco em alto rendimento, desempenho físico e torneios",
         frequency: 5
     }
+]
+
+interface Location {
+    id: number;
+    name: string;
+    address: string;
+    mapsUrl: string;
+    schedule: {
+      days: string;
+      hours: string;
+    };
+  }
+
+export const locations: Location[] = [
+    {
+        id: 1,
+        name: 'Clube de Tênis Primavera',
+        address: 'Av. das Palmeiras, 1500 - Águas claras',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1234567890!2d-46.567890!3d-23.567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM0JzA0LjQiUyA0NsKwMzQnMDEuNiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr',
+        schedule: {
+          days: 'Segunda à Quarta',
+          hours: '08:00 - 20:00'
+        }
+      },
+      {
+        id: 2,
+        name: 'Academia Top Spin',
+        address: 'R. dos Backhands, 300 - Taguatinga centro',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9876543210!2d-46.654321!3d-23.543210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzM1LjYiUyA0NsKwMzknMTAuMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890456!5m2!1spt-BR!2sbr',
+        schedule: {
+          days: 'Quinta e Sexta',
+          hours: '13:00 - 18:00'
+        }
+      },
+
 ];

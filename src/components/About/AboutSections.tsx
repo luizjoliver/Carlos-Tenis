@@ -4,13 +4,13 @@ import { BsArrowRightCircleFill } from "react-icons/bs";
 
 export default function AboutSection() {
   return (
-    <CarlosSectionStyled>
+    <CarlosSectionStyled id='sobre' aria-label="Seção sobre o profissional">
       <ContentContainer>
-        <ImagePlaceholder />
+        <ImagePlaceholder   aria-label="Foto de Carlos Silva"/>
         
         <ProfessionalInfo>
           <h2>Carlos Silva</h2>
-          <h3>Profissional de Tênis com 15+ anos de experiência</h3>
+          <h3>Profissional de Tênis com 10+ anos de experiência</h3>
           
           <p>
             Formado em Educação Física com especialização em Tênis de Campo, atuo como instrutor 
@@ -18,26 +18,26 @@ export default function AboutSection() {
             de alto padrão e treinamento de atletas competitivos.
           </p>
 
-          <HighlightsGrid>
-            <HighlightItem>
+          <HighlightsGrid  role="region" aria-label="Destaques profissionais">
+            <HighlightItem role="article" aria-labelledby="experiencia">
               <span>15+</span>
               <p>Anos de Experiência</p>
             </HighlightItem>
-            <HighlightItem>
-              <span>1000+</span>
+            <HighlightItem role="article" aria-labelledby="estudantes">
+              <span>300+</span>
               <p>Alunos Treinados</p>
             </HighlightItem>
-            <HighlightItem>
-              <span>50+</span>
+            <HighlightItem  role="article" aria-labelledby="torneios">
+              <span>15+</span>
               <p>Torneios Orientados</p>
             </HighlightItem>
-            <HighlightItem>
+            <HighlightItem role="article" aria-labelledby="certificação">
               <span>3</span>
-              <p>Certificações Internacionais</p>
+              <p>Certificações</p>
             </HighlightItem>
           </HighlightsGrid>
 
-          <Button variant="secondary">
+          <Button variant="secondary"  aria-label="Conhecer aulas disponíveis" >
             Conheça minhas aulas
             <BsArrowRightCircleFill size={20} />
           </Button>

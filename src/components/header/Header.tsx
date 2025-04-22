@@ -6,20 +6,21 @@ import NavBarComponent from "./NavBar";
 
 export default function Header({children}:{children:ReactNode}) {
   return (
-    <StyledHeader >
+    <StyledHeader>
 
-      <DivLogo>
-        <div>
-          <img src={tennisBall } />
-          <h2>CarlosTênis</h2>
-        </div>
+      <DivLogo aria-label="Logo Carlos Tênis">
+        <a href="/" aria-label="Voltar para página inicial">
+          <img src={tennisBall } alt="Ícone de bola de tênis" 
+            role="presentation" />
+         <h1>CarlosTênis</h1> 
+        </a>
       </DivLogo>
 
-      <NavBarComponent>
+      <NavBarComponent aria-label="Navegação principal">
         {children}
       </NavBarComponent>
         
-      <DivWhatsapp>
+      <DivWhatsapp aria-label="Contato">
     
         <Button variant="secondary">
           Entre em contato

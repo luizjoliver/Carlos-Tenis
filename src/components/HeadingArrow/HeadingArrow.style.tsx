@@ -6,6 +6,7 @@ export const HeadingArrowContainer = styled.div`
   align-items: center;
   width: 100%;
   margin-bottom: 3rem;
+
 `;
 
 export const Title = styled.h1`
@@ -21,7 +22,7 @@ export const Title = styled.h1`
 export const ArrowContainer = styled.div`
   display: flex !important;
   gap: 1rem;
-
+ 
   @media (max-width: 768px) {
     display: none !important;
   }
@@ -29,9 +30,10 @@ export const ArrowContainer = styled.div`
   & > * {
     cursor: pointer;
     transition: color 0.3s;
-    
+   
     &:hover {
-      color: ${props => props.theme.colors.primary};
+      background-color: ${props => props.theme.colors.primary};;
+      border-radius: 100%;
     }
   }
 `;

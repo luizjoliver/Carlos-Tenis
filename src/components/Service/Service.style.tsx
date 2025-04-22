@@ -24,7 +24,7 @@ export const Container = styled.div`
   }
 `;
 
-export const ServiceText = styled.div`
+export const ServiceText = styled.header`
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -67,7 +67,7 @@ export const ServiceText = styled.div`
   }
 `;
 
-export const ServiceContainerContent = styled.div`
+export const ServiceContainerContent = styled.article`
   width: 100%;
   height: 85%;
   display: flex;
@@ -139,7 +139,7 @@ export const ServiceContent = styled.div`
   }
 `;
 
-export const ServiceInfoContainer = styled.div`
+export const ServiceInfoContainer = styled.section`
   flex: 1;
   display: flex;
   align-items: center;
@@ -197,7 +197,7 @@ export const Info = styled.div`
   }
 `;
 
-export const ServiceNavigation = styled.div`
+export const ServiceNavigation = styled.nav`
   width: 100%;
   display: flex;
   align-items: center;

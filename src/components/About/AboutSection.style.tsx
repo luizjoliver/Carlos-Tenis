@@ -50,7 +50,7 @@ export const ImagePlaceholder = styled.div`
   }
 `;
 
-export const ProfessionalInfo = styled.div`
+export const ProfessionalInfo = styled.article`
   flex: 0 1 50%;
   display: flex;
   flex-direction: column;

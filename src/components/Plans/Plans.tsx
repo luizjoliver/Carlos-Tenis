@@ -18,20 +18,23 @@ export default function PlansSection() {
   }
 
   return (
-    <PlanSectionStyled>
+    <PlanSectionStyled id='planos' aria-label="Planos de aulas disponíveis">
       <ContainerPlan>
         <AboutPlan>
-          <HeadingArrow title='Planos' handleClickArrow={handleClickArrow} />
+          <HeadingArrow title='Planos' handleClickArrow={handleClickArrow}  aria-label="Navegação entre planos" />
         </AboutPlan>
 
-        <PlansContainerContent>
+        <PlansContainerContent role="list" aria-live="polite">
           {Plans.map((plan) => (
             <Plan
               key={plan.id}
               isActive={plan.id === currentPlan}
               onClick={() => setCurrentPlan(plan.id)}
+              role="listitem"
+              aria-current={plan.id === currentPlan ? "true" : "false"}
+              tabIndex={0}
             >
-              <Frequency>
+              <Frequency aria-label={`Frequência: ${plan.frequency} vezes por semana`}>
                     <span>{plan.frequency}x/Semana</span>
                     <img src={tennisBall} alt="Ícone de bola de tênis" />
                   </Frequency>
@@ -42,7 +45,8 @@ export default function PlansSection() {
 
                 <PlanDetails> 
                   <p>{plan.description}</p>
-                  <Button variant={currentPlan === plan.id ? 'secondary' : 'primary'}>
+                  <Button variant={currentPlan === plan.id ? 'secondary' : 'primary'}
+                    aria-label={`Selecionar plano ${plan.title}`}>
                     Comprar Agora
                   </Button>
                 </PlanDetails>

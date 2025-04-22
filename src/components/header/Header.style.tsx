@@ -24,7 +24,7 @@ export const DivLogo = styled.div`
     justify-content: start;
     padding-left: 2rem;
 
-   div {
+   a {
     display: flex;
     gap: 1rem;
     color: ${(props) => props.theme.colors.white};
@@ -78,7 +78,7 @@ export const NavBar = styled.nav`
 `
    
 
-export const DivWhatsapp = styled.header`
+export const DivWhatsapp = styled.div`
     display: flex;
     flex-direction: row;
     width: 33%;

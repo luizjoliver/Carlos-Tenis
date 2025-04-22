@@ -55,7 +55,7 @@ export const PlansContainerContent = styled(ServiceContainerContent)`
   }
 `;
 
-export const Plan = styled.div<PlanProps>`
+export const Plan = styled.article<PlanProps>`
   background-color: ${props => 
     props.isActive 
       ? props.theme.colors.primary 

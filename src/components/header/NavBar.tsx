@@ -6,14 +6,14 @@ export default function NavBarComponent({children}:{children:ReactNode}) {
 
   return (
     <>
-      <NavBar>
+      <NavBar role="navigation" aria-label="Navegação principal">
             <ul>
               {children}
             </ul>
         </NavBar>
     
-          <NavbarMobile>
-            <ul>
+          <NavbarMobile  aria-label="Navegação móvel">
+            <ul role="menu">
               {children}
             </ul>
           </NavbarMobile>

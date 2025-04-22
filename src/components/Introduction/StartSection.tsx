@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import Header from "../header/Header";
 import { ContentContainer, CustomersContainer, CustomersInfo, SectionIntroduction, SellingContainer, StartPresentation } from "./StartSection.style";
 import { customersImg } from "../../constants";
@@ -12,10 +11,10 @@ export default function StartSection() {
     <SectionIntroduction>
       
       <Header>
-        <Link to={"/"}>Serviços</Link >
-        <Link to={"/"}>Sobre</Link >
-        <Link to={"/"}>Planos</Link >
-        <Link to={"/"}>Localização</Link >
+        <a href={"#servicos"}>Serviços</a >
+        <a href={"#sobre"}>Sobre</a >
+        <a href={"#planos"}>Planos</a >
+        <a href={"#localizacao"}>Localização</a >
       </Header>
 
       <ContentContainer>
