@@ -1,0 +1,30 @@
+{
+    "title": "Carlos Tênis",
+    "description": "O Carlos Tênis é um projeto que visa divulgar o trabalho de Carlos, um treinador de tênis dedicado, com foco em oferecer aulas personalizadas para todos os níveis de jogadores.",
+    "techStack": ["React", "Vite", "TypeScript", "Styled-Components"],
+    "services": "Divulgação de serviços de aulas de tênis, Galeria de fotos, Responsividade total (Mobile e Desktop), Página de contato e integração com redes sociais.",
+    "about": "O projeto Carlos Tênis surgiu com a proposta de criar uma presença digital para o trabalho do Carlos, um experiente treinador de tênis. A plataforma tem como objetivo facilitar o contato com novos alunos, apresentar sua metodologia de ensino e mostrar a paixão pelo esporte.",
+    "type": "Front end",
+    "imgs": {
+      "banner": "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/banner/banner.png",
+      "desktopVersion": [
+
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop1.png",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop2.png",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop3.png",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop4.png",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop5.png",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop6.png"
+      ],
+      "mobileVersion": [
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile.png",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile1.png",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile2.png",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile3.png",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile4.png",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile5.png",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile6.png"
+      ]
+    }
+  }
+  
