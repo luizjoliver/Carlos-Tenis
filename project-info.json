@@ -6,24 +6,25 @@
     "about": "O projeto Carlos Tênis surgiu com a proposta de criar uma presença digital para o trabalho do Carlos, um experiente treinador de tênis. A plataforma tem como objetivo facilitar o contato com novos alunos, apresentar sua metodologia de ensino e mostrar a paixão pelo esporte.",
     "type": "Front end",
     "imgs": {
-      "banner": "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/banner/banner.png",
+      "banner": "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/banner/banner.PNG",
+      
       "desktopVersion": [
 
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop1.png",
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop2.png",
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop3.png",
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop4.png",
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop5.png",
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop6.png"
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop1.PNG",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop2.PNG",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop3.PNG",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop4.PNG",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop5.PNG",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/desktopVersion/desktop6.PNG"
       ],
       "mobileVersion": [
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile.png",
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile1.png",
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile2.png",
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile3.png",
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile4.png",
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile5.png",
-        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile6.png"
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile.PNG",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile1.PNG",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile2.PNG",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile3.PNG",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile4.PNG",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile5.PNG",
+        "https://raw.githubusercontent.com/luizjoliver/Carlos-Tenis/main/public/portfolio/mobileVersion/mobile6.PNG"
       ]
     }
   }
