@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bgTennis from '../../assets/bgTennis.jpg';
+import bgTennis from '../../assets/bgTennis.avif';
 
 export const SectionIntroduction = styled.section`
   height: 100vh;
