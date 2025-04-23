@@ -46,7 +46,7 @@ export default function PlansSection() {
                 <PlanDetails> 
                   <p>{plan.description}</p>
                   <Button variant={currentPlan === plan.id ? 'secondary' : 'primary'}
-                    aria-label={`Selecionar plano ${plan.title}`}>
+                    aria-label={`Selecionar plano ${plan.title}`} href='https://wa.me/5561999196605?text=Ol%C3%A1%20,%20Carlos%20,%20como%20funciona%20as%20aulas%20e%20planos?' >
                     Comprar Agora
                   </Button>
                 </PlanDetails>

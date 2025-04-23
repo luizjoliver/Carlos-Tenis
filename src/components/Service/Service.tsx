@@ -1,7 +1,6 @@
 
 import { ServiceContainerContent, ServiceContent, ServiceInfoContainer, ServiceNavigation, ServiceSectionStyled, ServiceText, Container, Info } from "./Service.style";
 import Button from "../Button/Button";
-import { BsArrowRightCircleFill } from "react-icons/bs";
 import { useState } from "react";
 import { ServiceInfos } from "../../constants";
 import HeadingArrow from "../HeadingArrow/HeandingArrow";
@@ -66,9 +65,8 @@ export default function ServiceSection() {
                 <p>{serviceInfo.description}</p>
 
                 <div>
-                  <Button variant="primary" aria-label={`Acessar ${serviceInfo.buttonText}`}>
+                  <Button variant="primary" aria-label={`Acessar ${serviceInfo.buttonText}`} href="https://wa.me/5561999196605?text=Ol%C3%A1%20,%20quero%20fazer%20parte%20das%20suas%20aulas!" icon>
                     {serviceInfo.buttonText}
-                    <BsArrowRightCircleFill size={20} />
                   </Button>
                 </div>
               </Info>

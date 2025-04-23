@@ -1,3 +1,4 @@
+// Button.style.ts
 import styled from "styled-components";
 
 interface ButtonStyledProps {
@@ -5,6 +6,9 @@ interface ButtonStyledProps {
 }
 
 export const ButtonStyled = styled.button<ButtonStyledProps>`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
   background-color: ${(props) => 
     props.variant === 'primary' 
       ? props.theme.colors.primary
@@ -21,6 +25,10 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
   position: relative;
   transition: all 0.2s ease;
   overflow: hidden;
+  text-decoration: none;
+
+
+  justify-content: center; 
 
   &:hover {
     &::after {
@@ -37,10 +45,20 @@ export const ButtonStyled = styled.button<ButtonStyledProps>`
 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transform: translateY(-1px);
+    
+  
+    svg {
+      transform: translateX(3px);
+    }
   }
 
   &:active {
     transform: translateY(0);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  svg {
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
   }
 `;

@@ -30,7 +30,7 @@ export const ContentContainer = styled.div`
   }
 `;
 
-export const ImagePlaceholder = styled.div`
+export const ImagePlaceholder = styled.img`
   flex: 0 1 45%;
   background-color: black;
   border-radius: 8px;
@@ -66,7 +66,7 @@ export const ProfessionalInfo = styled.article`
 
   h3 {
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 700;
     opacity: 0.9;
     @media (max-width: 768px) {
       font-size: 1.1rem;

@@ -229,7 +229,7 @@ export const ServiceNavigation = styled.nav`
       color: ${(props) => props.theme.colors.primary};
     }
 
-    /* Corrigido aqui */
+
     &.activedTitle {
       color: ${(props) => props.theme.colors.primaryFallBack};
       

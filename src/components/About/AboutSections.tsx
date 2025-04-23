@@ -1,12 +1,11 @@
 import { CarlosSectionStyled, ContentContainer, ImagePlaceholder, ProfessionalInfo, HighlightsGrid, HighlightItem } from './AboutSection.style';
-import Button from "../Button/Button";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import trainer from "../../assets/trainer.jpg"
 
 export default function AboutSection() {
   return (
     <CarlosSectionStyled id='sobre' aria-label="Seção sobre o profissional">
       <ContentContainer>
-        <ImagePlaceholder   aria-label="Foto de Carlos Silva"/>
+        <ImagePlaceholder   aria-label="Foto de Carlos Silva" src={trainer}/>
         
         <ProfessionalInfo>
           <h2>Carlos Silva</h2>
@@ -37,10 +36,7 @@ export default function AboutSection() {
             </HighlightItem>
           </HighlightsGrid>
 
-          <Button variant="secondary"  aria-label="Conhecer aulas disponíveis" >
-            Conheça minhas aulas
-            <BsArrowRightCircleFill size={20} />
-          </Button>
+        
         </ProfessionalInfo>
       </ContentContainer>
     </CarlosSectionStyled>

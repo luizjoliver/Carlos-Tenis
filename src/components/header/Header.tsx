@@ -1,10 +1,9 @@
 import { DivLogo, DivWhatsapp, StyledHeader } from "./Header.style";
 import tennisBall from "../../assets/tennisBall.png";
-import { ReactNode } from "react";
 import Button from "../Button/Button";
 import NavBarComponent from "./NavBar";
 
-export default function Header({children}:{children:ReactNode}) {
+export default function Header() {
   return (
     <StyledHeader>
 
@@ -16,13 +15,12 @@ export default function Header({children}:{children:ReactNode}) {
         </a>
       </DivLogo>
 
-      <NavBarComponent aria-label="Navegação principal">
-        {children}
-      </NavBarComponent>
+      <NavBarComponent aria-label="Navegação principal"/>
+            
         
       <DivWhatsapp aria-label="Contato">
     
-        <Button variant="secondary">
+        <Button variant="secondary" href="https://wa.me/55619991966052?text=Ol%C3%A1%20,%20Carlos%20Ernane!">
           Entre em contato
         </Button>
 

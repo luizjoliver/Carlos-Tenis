@@ -50,7 +50,7 @@ export const NavBar = styled.nav`
     height: 100%;
     align-items: center;
     justify-content: center;
-
+   
     ul{
         display: flex;
         justify-content: space-around;
@@ -62,6 +62,12 @@ export const NavBar = styled.nav`
         width: 70%;
         border-radius: 5rem;
         color: ${(props) => props.theme.colors.white};
+
+       a {
+        &:hover{ 
+            color: ${(props) => props.theme.colors.primary}
+            }  
+        }
             }
 
 

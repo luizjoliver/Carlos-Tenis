@@ -1,16 +1,17 @@
-import { ReactNode, useState } from 'react'
+import { ReactNode } from 'react';
 import { NavBarMobile } from './NavBarMobile.style'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoMdClose } from 'react-icons/io'
 
-export default function NavbarMobile({ children }: { children: ReactNode }) {
+type NavBarMobileProps = {
+    isOpen:boolean;
+    handleClickMenu: () => void
+    children:ReactNode
+}
 
-    const [isOpen, setIsOpen] = useState(false)
+export default function NavbarMobile({ children,isOpen, handleClickMenu }: NavBarMobileProps) {
 
-    function handleClickMenu() {
-        setIsOpen((prevState => !prevState))
-    }
-
+  
     return (
         <NavBarMobile>
 
@@ -28,9 +29,9 @@ export default function NavbarMobile({ children }: { children: ReactNode }) {
                     <div className="overlay" onClick={handleClickMenu} tabIndex={0}
                         aria-label="Fechar menu" />
 
-                    <aside>
+                    <aside  >
                         <IoMdClose onClick={handleClickMenu} size={28} />
-                        {children}
+                                     {children}
                     </aside>
 
                 </>

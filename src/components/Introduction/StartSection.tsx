@@ -2,7 +2,6 @@ import Header from "../header/Header";
 import { ContentContainer, CustomersContainer, CustomersInfo, SectionIntroduction, SellingContainer, StartPresentation } from "./StartSection.style";
 import { customersImg } from "../../constants";
 import Button from "../Button/Button";
-import { BsArrowRightCircleFill } from "react-icons/bs";
 
 
 
@@ -10,12 +9,7 @@ export default function StartSection() {
   return (
     <SectionIntroduction>
       
-      <Header>
-        <a href={"#servicos"}>Serviços</a >
-        <a href={"#sobre"}>Sobre</a >
-        <a href={"#planos"}>Planos</a >
-        <a href={"#localizacao"}>Localização</a >
-      </Header>
+      <Header/>
 
       <ContentContainer>
 
@@ -40,9 +34,8 @@ export default function StartSection() {
             <p>
               Venha fazer parte do meu time de alunos e transforme seu jogo de tênis com aulas personalizadas, focadas no seu ritmo, objetivos e nível de experiência. Aqui, cada aluno recebe atenção individualizada para evoluir com confiança, técnica e motivação.
             </p>
-            <Button variant="primary" >
+            <Button variant="primary" href="https://wa.me/5561999196605?text=Ol%C3%A1%20,%20quero%20fazer%20parte%20das%20suas%20aulas!" icon>
               Faça parte
-              <BsArrowRightCircleFill size={20} />
             </Button>
           </SellingContainer>
 

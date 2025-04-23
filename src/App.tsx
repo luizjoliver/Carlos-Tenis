@@ -1,5 +1,5 @@
 import AboutSection from "./components/About/AboutSections"
-import Footer from "./components/Footer/footer"
+import FooterComponent from "./components/Footer/FooterComponent"
 import StartSection from "./components/Introduction/StartSection"
 import LocalizationSection from "./components/Localization/LocalizationSection"
 import PlansSection from "./components/Plans/Plans"
@@ -12,12 +12,12 @@ function App() {
 
   return (
     <main>
-    <StartSection/>
-    <ServiceSection/>
-    <AboutSection/>
-    <PlansSection/>
-    <LocalizationSection/>
-    <Footer/>
+      <StartSection/>
+      <ServiceSection/>
+      <AboutSection/>
+      <PlansSection/>
+      <LocalizationSection/>
+      <FooterComponent/>
     </main>
   )
 }

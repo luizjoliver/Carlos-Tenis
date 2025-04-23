@@ -163,11 +163,7 @@ export const SellingContainer = styled.div`
     text-align: left;
   }
 
-  button {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
+ 
 
 
 

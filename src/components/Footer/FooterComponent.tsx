@@ -1,9 +1,9 @@
 
-  import { FaInstagram, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
+  import { FaInstagram, FaWhatsapp } from "react-icons/fa";
   import { BiTennisBall } from "react-icons/bi";
-import { Copyright, FooterContainer, FooterContent, FooterSection, SocialLinks, TennisBallIcon } from "./Footer.style";
+import { Copyright, FooterContainer, FooterContent, FooterSection, SocialLinks, TennisBallIcon } from "./FooterComponent.style";
   
-  export default function Footer() {
+  export default function FooterComponent() {
     return (
       <FooterContainer>
         <TennisBallIcon>
@@ -14,31 +14,29 @@ import { Copyright, FooterContainer, FooterContent, FooterSection, SocialLinks, 
           <FooterSection>
             <h4>Redes Sociais</h4>
             <SocialLinks>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/tennistv/?hl=pt" target="_blank" rel="noopener noreferrer" >
                 <FaInstagram /> Instagram
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5561999196605" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp /> WhatsApp
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <FaMapMarkerAlt /> Google Maps
               </a>
             </SocialLinks>
           </FooterSection>
   
           <FooterSection>
             <h4>Contato</h4>
-            <p>professor@tenis.com.br</p>
-            <p>(11) 99999-9999</p>
-            <p>São Paulo - SP</p>
+            <p>CarlosErnaneTenis@gmail.com</p>
+            <p>(61) 98469-4842</p>
+            <p>Brasília - DF</p>
           </FooterSection>
   
           <FooterSection>
             <h4>Links Rápidos</h4>
             <nav>
+            <a href="#servicos">Serviço</a>
               <a href="#planos">Planos</a>
               <a href="#sobre">Sobre</a>
-              <a href="#locais">Locais</a>
+              <a href="#localizacao">Locais</a>
             </nav>
           </FooterSection>
         </FooterContent>
